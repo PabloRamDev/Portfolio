@@ -3,32 +3,47 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,600&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
   <title>Pabloram.dev</title>
 </head>
 
 <body>
   <header>
-    <a href="/">
+    <a href="/" id="home">
       <h1 class="header-logo">
         pabloram.dev
       </h1>
       
     </a>
+    <div class="nav_container">
     <nav id="nav">
-      <a href="#about_me_trigger">about</a>
-      <a href="#my_projects_trigger">my projects</a>
-      <a href="#contact">contact me</a>
-
+      <a href="#about_me_trigger" id="about_nav">about me</a>
+      <a href="#my_projects_trigger" id="my_projects_nav">my projects</a>
+      <a href="#contact" id="contact_nav">contact me</a>
     </nav>
+    <button id="language" data-emoji>🇬🇧</button>
+  </div>
   </header>
 
   <!-- banner 3d -->
@@ -45,27 +60,24 @@
   <div class="about_me_trigger" id="about_me_trigger">
     <section class="about_me" id="about-me">
       <div class="about_me_text_wrapper" id="about_me_text_wrapper">
-        <h2>
+        <h2 id="about_me_title">
           About Me
         </h2>
         <p id="about_me_p1">
           I'm a freshly graduated <span class="fullstack">Full Stack Developer</span> looking for a new job.
-          I live in Chile and i have 2 years of experience working in IT related fields (support), but web development
-          is
-          what i'm really into.
-
-
-          Express.js and Django (Django REST Framework) are the backend frameworks that i like and use to build fast and
+          I live in Chile and i have 3 years of experience working in IT related fields (support), but web development
+          is what i'm really into. <br/>
+          Express.js and Django (Django REST Framework) are the backend frameworks that i'm using to build fast and
           reliable apps.
 
 
-        <p id="about_me_p3">
+        <p id="about_me_p2">
           In relation to frontend development, i'm really comfortable working with React.js Next.js and CSS frameworks
           like bootstrap and tailwind. <br>
 
         </p>
         <p id="about_me_p3">
-          Now i'm learning Three.js and GSAP to make my sites pop with 3D and animation.
+          Now i'm currently learning Three.js and GSAP to make my sites pop with 3D graphics and cool animations.
         </p>
 
       </div>
@@ -83,7 +95,7 @@
 
     <section class="project" id="project_intro" data-pin="true">
       <div class="project_title" id="project_intro_title">
-        <h2>My <span>projects</span></h2>
+        <h2 id="project_0_title">My <span>projects</span></h2>
         <div class="project_body"></div>
         <div class="project_description">
 
@@ -105,15 +117,13 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project1_p1">
             Web APP made with Django Rest Framework and a frontend made with React.Js and Material-Ui (MUI v5) component
             library.
           </p>
-          <p>
+          <p id="project1_p2">
             The main use of APP reservas DAE is to make reservations of the Multi-Purpose Sports Field of Inacap La
-            Serena, this can be done
-            inmediately by DAE Members using the scheluder, or by the students with an application form besides
-            invitations.
+            Serena.
           </p>
 
 
@@ -124,7 +134,7 @@
           <a href="https://github.com/PabloRamDev/AppReservasDae.git" target="_blank" class="github_link">
           <div class="project_github_link">
 
-            <object data="github.svg" width="50" fill="#1B1F23" id="github"></object>
+            <object data="github.svg" width="40" fill="#1B1F23" id="github"></object>
             <p>Github Link</p>
 
           </div>
@@ -148,7 +158,7 @@
     <section class="project" id="project2" data-pin="true">
 
       <div class="project_title">
-        <h3>
+        <h3 id="project2_h3">
           <span>&#60;</span> CPA fixed Assets System <span>/&#62;</span>
         </h3>
       </div>
@@ -156,11 +166,11 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project2_p1">
             Web APP made with Django Rest Framework and a frontend made with React.Js and Material-Ui (MUI v5) component
             library.
           </p>
-          <p>
+          <p id="project2_p2">
             The main use of this App is to keep an active database of the fixed Assets of an institution, Inventory etc.
           </p>
 
@@ -172,9 +182,7 @@
           <a href="https://github.com/PabloRamDev/AppReservasDae.git" target="_blank" class="github_link">
             <div class="project_github_link">
   
-              <object data="github.svg" width="50" fill="#1B1F23" id="github"></object>
-              <p>Github Link</p>
-  
+             
             </div>
           </a>
         </div>
@@ -188,7 +196,7 @@
     <section class="project" id="project3" data-pin="true">
 
       <div class="project_title">
-        <h3>
+        <h3 id="project3_h3">
           <span>&#60;</span> PABLORAM.DEV Portfolio <span>/&#62;</span>
         </h3>
       </div>
@@ -196,10 +204,10 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project3_p1">
             Well, This is the portfolio you're currently browsing, Made with Vanilla Js, HTML5 and CSS3.
           </p>
-          <p>
+          <p id="project3_p2">
             GSAP is the library used to make the scroll animations and a the little 3D Cube of my Stacks is made with
             THREE.Js
           </p>
@@ -212,12 +220,9 @@
           <a href="github" target="_blank" class="github_link">
           <div class="project_github_link">
 
-            <svg width="50" height="50" viewBox="0 0 1024 1024" fill="0xffffff  " xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-                transform="scale(64)" fill="#1B1F23" />
-            </svg>
+            <object data="github.svg" width="40" fill="#1B1F23" id="github"></object>
             <p>Github Link</p>
+            
 
           </div>
         </a>
@@ -235,8 +240,8 @@
 
   </div>
   <section class="contact" id="contact">
-    <h2>Contact <span>Me</span></h2>
-    <p>Here are the links of my social media and my Github</p>
+    <h2 id="contact_h2">Contact <span>Me</span></h2>
+    <p id="contact_p">If you liked my work, or you are hiring, feel free to contact me using any of the options below</p>
     <div class="cards_container">
 
 
@@ -244,7 +249,7 @@
         <a href="https://www.linkedin.com/in/pablo-ram%C3%ADrez-mart%C3%ADnez-2b5733254" target="_blank">
         <div class="link_wrapper">
             <img src="linkedin.png" alt="Linekin Logo" width="150">
-            <p>Connect on linkedin</p>
+            <p id="linkedin_p">Connect on LinkedIn</p>
         </div>
       </a>
    
@@ -254,7 +259,7 @@
           <a href="https://github.com/PabloRamDev" target="_blank">
             <div class="link_wrapper">
               <img src="github.png" alt="Github logo">
-              <p>Explore my Github</p>
+              <p id="github_p">Explore my Github</p>
           </div>
           </a>
         
@@ -267,7 +272,7 @@
         <a href="mailto:pabloram.dev@gmail.com" target="_blank">
         <div class="link_wrapper">
           <img src="mail.png" alt="Email logo" width="150">
-          <p>Send me an Email</p>
+          <p id="email_p">Send me an Email</p>
         </div>
       </a>
    

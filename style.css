@@ -10,13 +10,15 @@ body {
   box-sizing: border-box;
   position: absolute;
 }
+ 
 header {
   background-color: #fff;
   width: 100vw;
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 header a {
   text-decoration: none;
@@ -26,6 +28,9 @@ header h1 {
   font-size: 1.5rem;
   font-family: Poppins, sans-serif;
   color: #f73f3f;
+}
+.nav_container {
+  display: flex;
 }
 nav {
   display: none;
@@ -37,6 +42,17 @@ nav a {
   margin: 0 20px;
   color: #f73f3f;
   text-decoration: none;
+}
+nav button {
+ 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+
+  
 }
 @media (min-width: 768px) {
   header {
@@ -207,6 +223,16 @@ nav a {
   font-family: Poppins, sans-serif;
   gap: 1rem;
 }
+.project_body {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+
+}
 #project_intro span {
   color: #ee1f26;
 }
@@ -228,7 +254,7 @@ nav a {
 #project_intro_title {
   font-family: Poppins, sans-serif;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 #project_intro {
@@ -238,6 +264,7 @@ nav a {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  justify-self: center;
 }
 .project_description {
   font-size: 12;
@@ -248,12 +275,15 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 2rem;
+  height: auto;
+  
 }
 .project_image_wrapper img {
   align-self: center;
-  width: 350px;
+  width: 300px;
 }
 .project_description {
   font-family: Poppins, sans-serif;
@@ -267,12 +297,15 @@ nav a {
   text-transform: uppercase;
   font-weight: 700;
   transition: 0.3s;
+  margin-top: 1.5rem;
+  
 }
 .github_link:hover {
   transform: scale(1.05);
 }
 .github_link p {
-  margin-right: 20px;
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 #project2 .project_github_link {
   display: none;
@@ -281,7 +314,7 @@ nav a {
   display: flex;
   align-items: center;
   width: fit-content;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 20px;
   gap: 1rem;
   background: linear-gradient(60deg, #e66465, #eb3111);
@@ -291,7 +324,7 @@ nav a {
     display: flex;
     width: 100vw;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     padding: 3rem;
@@ -323,11 +356,8 @@ nav a {
     color: #f73f3f;
   }
   .project_body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .project_text {
     display: flex;
@@ -335,10 +365,13 @@ nav a {
     justify-content: space-evenly;
     height: 100%;
   }
+  .project_description {
+   align-self: start;
+  }
   .project_image_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -346,6 +379,15 @@ nav a {
   .project_image_wrapper img {
     align-self: center;
     width: 500px;
+  }
+  .github_link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s;
+ 
+    
   }
 }
 .contact {
@@ -375,18 +417,20 @@ path {
   display: grid;
   grid-template-columns: repeat(1fr 1fr);
   width: 100%;
-  height: 100%;
+  height: 40%;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 .link_wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .link_wrapper p {
   color: #555;
   font-weight: 700;
+  margin-left: 1rem;
 }
 .link_wrapper img {
   width: 50px;
