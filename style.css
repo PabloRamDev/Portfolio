@@ -13,8 +13,8 @@ body {
  
 header {
   background-color: #fff;
-  width: 100vw;
-  height: 10vh;
+  width: 100dvw;
+  height: 10dvh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,8 +71,8 @@ nav button {
   }
 }
 .banner3d {
-  width: 100vw;
-  height: 90vh;
+  width: 100dvw;
+  height: 90dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +96,7 @@ nav button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    width: 100dvw;
     position: relative;
   }
   .banner3d h2 {
@@ -107,7 +107,7 @@ nav button {
   .banner3d canvas {
     position: absolute;
     bottom: 0;
-    right: 10vw;
+    right: 10dvw;
     width: 400;
     height: 400;
   }
@@ -135,8 +135,8 @@ nav button {
 .about_me {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 100vh;
-  max-width: 100vw;
+  min-height: 100dvh;
+  max-width: 100dvw;
   top: 100px;
 }
 .about_me h2 {
@@ -207,25 +207,25 @@ nav button {
 }
 .my_projects_trigger {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(90deg, #cccccc, #ffffff);
   overflow-x: none;
   width: 600%;
 }
 .project {
   display: flex;
-  width: 100vw;
+  width: 100dvh;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   padding: 2rem;
   font-family: Poppins, sans-serif;
   gap: 1rem;
 }
 .project_body {
   display: flex;
-  width: 100vw;
+  width: 100dvh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -258,8 +258,8 @@ nav button {
   text-align: center;
 }
 #project_intro {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   font-weight: 700;
   color: #fff;
@@ -322,11 +322,11 @@ nav button {
 @media (min-width: 768px) {
   .project {
     display: flex;
-    width: 100vw;
+    width: 100dvw;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     padding: 3rem;
     font-family: Poppins, sans-serif;
   }
@@ -393,8 +393,8 @@ nav button {
 .contact {
   display: flex;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   flex-direction: column;
   background-color: #fff;
   color: #555;
