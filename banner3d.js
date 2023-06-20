@@ -38,9 +38,9 @@ function actualizarWidth() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(380, canvas.offsetHeight);
     if(window.innerWidth < 768){
-      cubo.position.set(0,0,-12)   
+      cubo.position.set(0,0,-15)   
       if(window.innerWidth <= 600){
-        cubo.position.set(0,0,-18)
+        cubo.position.set(0,0,-15)
       }
       }
       

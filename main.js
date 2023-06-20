@@ -86,9 +86,6 @@ const projectsTween = gsap.timeline({
         pin: true,
         anticipatePin: 1
         
-       
-        
-        
     }
 })
 // projects
@@ -134,7 +131,6 @@ actual(".project_title"),{
         })
     }
 })
-
 
 
 const translate = (elem,obj,lang)=>{
@@ -190,9 +186,11 @@ const  languageStart = ()=>{
     }
 }
 
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
+const githubLogo = document.getElementById('github_logo')
 
-window.addEventListener('DOMContentLoaded',languageStart)
+window.addEventListener('DOMContentLoaded',() => {languageStart; isDarkMode? githubLogo.fill = "#bgbgbg" : null })
 languageBtn.addEventListener('click', handleTranslate)
 
 
