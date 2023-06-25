@@ -14,7 +14,7 @@ renderer.setClearColor( 0x000000, 0 );
 const canvas = document.querySelector(".banner3d")
 // const spaceTexture = new THREE.TextureLoader().load('fondo.jpg');
 // scene.background = spaceTexture;
-const geometry = new THREE.BoxGeometry(3,3,3)
+const geometry = new THREE.BoxGeometry(2.5,2.5,2.5)
 let materialArray = [];
 
 materialArray.push(new THREE.MeshStandardMaterial( { map: new THREE.TextureLoader().load( '/django.jpg' ) }));
@@ -38,9 +38,9 @@ function actualizarWidth() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(380, canvas.offsetHeight);
     if(window.innerWidth < 768){
-      cubo.position.set(0,0,-15)   
+      cubo.position.set(0,0,-12)   
       if(window.innerWidth <= 600){
-        cubo.position.set(0,0,-15)
+        cubo.position.set(0,0,-12)
       }
       }
       

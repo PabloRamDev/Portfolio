@@ -5,7 +5,7 @@ const traducciones = {
         contact_nav: "contact me",
         banner3d_subtitle : "Full Stack Developer",
         about_me_title: "About Me",
-        about_me_p1: "I'm a graduated <span class='fullstack'>Programmer Analyst</span> looking for a new job. I live in Chile and i have 3 years of experience working in IT, working on web development on multiple frameworks. i'm always learning and looking for new technologies to improve my workflow, and i'm constantly adapting to the industry changes<br/> Actually, i'm using Javascript (Typescript) and Python to create amazing and realiable sites.",
+        about_me_p1: "I'm a graduated <span class='fullstack'>Programmer Analyst</span> looking for a new job. I live in Chile and i have 3 years of experience working in IT, mostly on web development using multiple frameworks. I'm always learning and looking for new technologies to improve my workflow, and i'm constantly adapting to the industry changes<br/> Actually, i'm using Javascript (Typescript) and Python to create amazing and realiable sites.",
         about_me_p2:"In relation to frontend development, i'm really comfortable working with React.js Next.js and CSS frameworks like bootstrap and tailwind.",
         about_me_p3: "Now i'm currently learning Three.js and GSAP to make my sites pop with 3D graphics and cool animations.",
         project_0_title: "My <span>projects</span>",

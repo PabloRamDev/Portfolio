@@ -1,8 +1,9 @@
 :root {
-  --dark-theme-bg: #1e2125;
+  --dark-theme-bg: #32373d;
   --light-theme-bg: #b6b6b6;
   --dark-theme-txt: #d8d9dd;
-  --light-theme-txt: ##26292c;
+  --light-theme-txt: #555;
+  --dark-theme-nav-txt: #eebcbb;
 }
 
 * {
@@ -29,8 +30,11 @@ header {
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2rem;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 header a {
   text-decoration: none;
@@ -39,6 +43,7 @@ header h1 {
   font-weight: 700;
   font-size: 1.5rem;
   font-family: Poppins, sans-serif;
+  color: var(--dark-theme-nav-txt);
  
 
 }
@@ -53,10 +58,15 @@ nav a {
   font-size: 1, 5rem;
   font-family: Poppins, sans-serif;
   margin: 0 20px;
-  color: #f73f3f;
+  color: var(--dark-theme-nav-txt);
   text-decoration: none;
+  transition-duration: 500ms;
 }
-nav button {
+
+nav a:hover {
+  color: #fff;
+}
+button {
  
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
@@ -64,14 +74,16 @@ nav button {
   background: none;
   cursor: pointer;
   text-align: center;
+  display: none;
 
-  
 }
 @media (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-between;
     padding: 0px 3rem;
+    position: absolute;
+    top: 0;
   }
   nav {
     display: flex;
@@ -80,16 +92,19 @@ nav button {
     font-weight: 700;
     font-size: 2rem;
     font-family: Poppins, sans-serif;
-    color: #f73f3f;
-    @media screen and (prefers-color-scheme: dark) {
-      color: #d8d9dd;
-      
-    }
+    color: var(--dark-theme-nav-txt);
+    transition-duration: 500ms;
+  }
+  header a h1:hover {
+    color: #fff;
+  }
+  button {
+    display: none;
   }
 }
 .banner3d {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,16 +164,22 @@ nav button {
     top: 35%;
     left: 100px;
     transform: translateY(0);
+    padding:0;
+
+    
   }
   .tittle_wrapper h2 {
     font-size: 9rem;
+  }
+  .tittle_wrapper h3 {
+    padding:0 7px;
   }
 }
 .about_me {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
-  max-width: 100vw;
+  max-width: 100dvw;
   top: 100px;
   
 }
@@ -206,8 +227,9 @@ nav button {
   width: auto;
   display: flex;
   padding: 30px;
-  justify-content: left;
+  justify-content: center;
   margin: auto 0;
+
 }
 .about_me_image_wrapper img {
   align-self: center;
@@ -222,7 +244,8 @@ nav button {
     font-family: Poppins, sans-serif;
     color: #555;
     font-size: 1.5rem;
-    margin-bottom: rem;
+    margin-bottom: 1rem;
+    
     @media screen and (prefers-color-scheme: dark) {
       color: #d8d9dd;
     }
@@ -317,6 +340,10 @@ nav button {
   margin-top: 1rem;
   gap: 2rem;
   height: auto;
+  @media screen and (prefers-color-scheme: dark) {
+    background: radial-gradient(circle, rgba(85,85,85,1) 0%, rgba(50,55,61,1) 60%);
+  }
+ 
   
 }
 .project_image_wrapper img {
@@ -442,12 +469,12 @@ nav button {
 }
 .contact {
   display: flex;
-  position: absolute;
   height: 100vh;
   width: 100vw;
   flex-direction: column;
   color: #555;
   align-items: center;
+  text-align: center;
   padding: 2rem;
   font-family: Poppins, sans-serif;
   gap: 2rem;
@@ -458,6 +485,7 @@ nav button {
 }
 .contact h2 {
   font-size: 2rem;
+  padding-top: 2rem;
   font-family: Poppins, sans-serif;
 }
 .contact span {
@@ -541,4 +569,21 @@ path {
     text-decoration: none;
     color: #555;
   }
+}
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  justify-content: center;
+ align-items: center;
+  font-family: Poppins, sans-serif;
+  color: var(--light-theme-txt);
+  @media screen and (prefers-color-scheme:dark) {
+    color: var(--dark-theme-txt)
+    
+  }
+
+
+
 }

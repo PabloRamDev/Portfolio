@@ -189,9 +189,19 @@ const  languageStart = ()=>{
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
 const githubLogo = document.getElementById('github_logo')
+const year = document.getElementById('year')
+console.log(year.innerHTML)
 
-window.addEventListener('DOMContentLoaded',() => {languageStart; isDarkMode? githubLogo.fill = "#bgbgbg" : null })
+window.addEventListener('DOMContentLoaded',() => {
+    languageStart; 
+    isDarkMode? githubLogo.fill = "#bgbgbg" : null; 
+    year.innerHTML = new Date().getFullYear().toString();
+    console.log(year.innerHTML)
+ })
+
 languageBtn.addEventListener('click', handleTranslate)
+
+
 
 
 
