@@ -81,8 +81,8 @@ const projectsTween = gsap.timeline({
     scrollTrigger: {
         trigger: ".my_projects_trigger",
         start: 'center center',
-        end: '+=4000',
-        scrub: true,
+        end: '+=5000',
+        scrub: 2,
         pin: true,
         anticipatePin: 1
         
@@ -101,7 +101,7 @@ actual(".project_title"),{
 }
     ).from(
        actual(".project_description"),{
-        ease: "power1",
+        
         alpha: 0,
         xPercent: 300 ,
        } ,
